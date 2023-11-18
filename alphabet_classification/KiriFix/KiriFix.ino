@@ -26,11 +26,11 @@ movingAvg mAvgAccY(10);
 movingAvg mAvgAccZ(10);
 
 // WiFi
-const char *ssid = "hehehe"; // Enter your WiFi name
-const char *password = "heheHaha";  // Enter WiFi password
+const char *ssid = "Hotspot"; // Enter your WiFi name
+const char *password = "minimum1234";  // Enter WiFi password
 
 // MQTT Broker
-const char *mqtt_broker = "192.168.147.19";
+const char *mqtt_broker = "192.168.43.34";
 const char *topic = "/sarung/kiri";
 const char *mqtt_username = "A-13";
 const char *mqtt_password = "public";
@@ -216,14 +216,6 @@ void loop() {
         Flex5 < 2300) {
       charToOutput = 'S';
     } else if (
-        Flex1 > 2500 &&
-        Flex2 > 2450 &&
-        Flex3 > 2450 && 
-        Flex4 > 2500 && 
-        Flex5 > 2500 &&
-        AccX > 8) {
-      charToOutput = 'M';
-    } else if (
         Flex1 < 2600 &&
         Flex2 < 2250 &&
         Flex3 > 2350 && 
@@ -238,12 +230,12 @@ void loop() {
         Flex5 < 2350) {
       charToOutput = 'G'; 
     } else if (
-        Flex1 > 2400 &&
-        Flex2 > 2400 &&
-        Flex3 > 2400 && 
-        Flex4 > 2400 && 
-        Flex5 > 2400 &&
-        AccX > 2) {
+        Flex1 > 2300 &&
+        Flex2 > 2300 &&
+        Flex3 > 2200 && 
+        Flex4 > 2300 && 
+        Flex5 > 2300 &&
+        AccX > 3) {
       charToOutput = 'M'; 
     } else if (
         Flex1 > 2300 &&

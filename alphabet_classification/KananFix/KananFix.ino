@@ -26,11 +26,11 @@ movingAvg mAvgAccY(10);
 movingAvg mAvgAccZ(10);
 
 // WiFi
-const char *ssid = "hehehe"; // Enter your WiFi name
-const char *password = "heheHaha";  // Enter WiFi password
+const char *ssid = "Hotspot"; // Enter your WiFi name
+const char *password = "minimum1234";  // Enter WiFi password
 
 // MQTT Broker
-const char *mqtt_broker = "192.168.147.19";
+const char *mqtt_broker = "192.168.43.34";
 const char *topic = "/sarung/kanan";
 const char *mqtt_username = "A-13";
 const char *mqtt_password = "public";
